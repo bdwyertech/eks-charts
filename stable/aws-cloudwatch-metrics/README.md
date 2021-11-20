@@ -26,6 +26,7 @@ helm upgrade --install aws-cloudwatch-metrics \
 | `image.tag` | Image tag to deploy | `1.247345.36b249270`
 | `image.pullPolicy` | Pull policy for the image | `IfNotPresent` | ✔
 | `clusterName` | Name of your cluster | `cluster_name` | ✔
-| `serviceAccount.create` | Whether a new service account should be created | `true` | 
-| `serviceAccount.name` | Service account to be used | | 
-| `hostNetwork` | Allow to use the network namespace and network resources of the node | `false` | 
+| `serviceAccount.create` | Whether a new service account should be created | `true` |
+| `serviceAccount.name` | Service account to be used | |
+| `hostNetwork` | Allow to use the network namespace and network resources of the node | `false` |
+| `region` | The region of the EKS cluster.  Required if you have IMDS locked down and do not allow use of hostNetwork | |

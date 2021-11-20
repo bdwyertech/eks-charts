@@ -7,6 +7,11 @@ metadata:
 data:
   cwagentconfig.json: |
     {
+      {{- if .Values.region }}
+      "agent": {
+        "region": "{{ .Values.region }}"
+      },
+      {{- end }}
       "logs": {
         "metrics_collected": {
           "kubernetes": {
